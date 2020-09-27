@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro:pixelsize=24:antialias=true:autohint=true";
+static char *font = "Source Code Pro:pixelsize=30:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -192,6 +192,7 @@ static MouseShortcut mshortcuts[] = {
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
+    { ControlMask,          Button4, kscrollup,      {.i= -1 }},
 };
 
 /* Internal keyboard shortcuts. */
